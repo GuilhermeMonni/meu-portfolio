@@ -1,0 +1,101 @@
+/* estilo principal */
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--cor-fundo);
+    color: var(--cor-letra);
+}
+
+/* cores */
+:root{
+    --cor-fundo: #00162f;
+    --cor-letra: #fff;
+    --azul: #200898;
+    --verde-agua: #0CBEF0;
+    --azul-claro: #5C72F0;
+    --lilas: #7D0CF0;
+}
+
+header{ /* cabecalho */
+    margin: 0 auto;
+    width: 60%;
+    background-color: transparent;
+}
+.img-inicio{ /* div cabecalho */
+    margin: 0 auto;
+    text-align: center;
+    width: 80%;
+    height: 120px;
+}
+.img-inicio img{ /* img cabecalho */
+    width: 20%;
+    margin: 0 auto;
+}
+
+main{ /* conteudo principal */
+    margin: 10px auto;
+    padding: 10px;
+    width: 70%;
+    height: auto;
+    box-shadow: 1px 1px 10px 1px #001c3c;
+    box-shadow: 20px;
+}
+.txt-inicio{ /* div texto inicial */
+    margin: 10px auto;
+    width: 92%;
+    height: 170px;
+}
+.txt-inicio p{ /* texto inicial */
+    text-align: justify;
+    text-indent: 20px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.03em;
+    line-height: 26px;
+    background-color: transparent;
+}
+.txt-inicio h1{ /* titulo do cabecalho */
+    margin: 5px auto;
+    text-align: left;
+    text-indent: 28px;
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 1.7em;
+    background-color: transparent;
+}
+main h2{ /* titulo dos projetos */
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 10px auto 10px;
+}
+.cards{ /* div dos cards */
+    display: flex;
+    flex-direction: row;
+}
+.card{ /* cards dos projetos */
+    margin: 10px auto;
+    background-color: #011833;
+    width: 30%;
+    height: 230px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+.card img{
+    width: 60%;
+    height: 120px;
+    margin: 5px;
+    border-radius: 20px;
+}
+.card h3{
+    margin: 10px auto;
+    font-size: 1.1em;
+    text-align: center;
+    font-family: "Nunito Sans", sans-serif;
+    background-color: transparent;
+}
