@@ -99,3 +99,13 @@ main h2{ /* titulo dos projetos */
     font-family: "Nunito Sans", sans-serif;
     background-color: transparent;
 }
+
+.img-foguete{
+    width: 60%;
+    display: flex;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+#foguete{
+    width: 3%;
+}
