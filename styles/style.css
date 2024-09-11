@@ -29,12 +29,14 @@ header{ /* cabecalho */
 }
 .img-inicio{ /* div cabecalho */
     margin: 0 auto;
+    background-color: transparent;
     text-align: center;
     width: 80%;
     height: 120px;
 }
 .img-inicio img{ /* img cabecalho */
     width: 20%;
+    background-color: transparent;
     margin: 0 auto;
 }
 
@@ -43,8 +45,17 @@ main{ /* conteudo principal */
     padding: 10px;
     width: 70%;
     height: auto;
-    box-shadow: 1px 1px 10px 1px #001c3c;
     box-shadow: 20px;
+}
+.container{
+    width: 100%;
+    padding: 10px;
+    background-color: transparent;
+    height: 70vh;
+    border-radius: 20px;
+}
+.container:hover{
+    box-shadow: 1px 1px 1000px 1px #001935;
 }
 .txt-inicio{ /* div texto inicial */
     margin: 10px auto;
@@ -73,6 +84,10 @@ main h2{ /* titulo dos projetos */
     text-align: center;
     margin: 10px auto 10px;
 }
+.projetos{
+    margin: 0 auto;
+    width: 92%;
+}
 .cards{ /* div dos cards */
     display: flex;
     flex-direction: row;
@@ -100,6 +115,9 @@ main h2{ /* titulo dos projetos */
     background-color: transparent;
 }
 
+footer{
+    background-color: transparent;
+}
 .img-foguete{
     width: 60%;
     position: absolute;
