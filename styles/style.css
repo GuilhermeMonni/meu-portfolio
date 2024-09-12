@@ -21,6 +21,13 @@
     --azul-claro: #5C72F0;
     --lilas: #7D0CF0;
 }
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
 header{ /* cabecalho */
     margin: 0 auto;
@@ -53,9 +60,7 @@ main{ /* conteudo principal */
     background-color: transparent;
     height: 70vh;
     border-radius: 20px;
-}
-.container:hover{
-    box-shadow: 1px 1px 1000px 1px #001935;
+    box-shadow: 1px 1px 1000px 1px #0019351b;
 }
 .txt-inicio{ /* div texto inicial */
     margin: 10px auto;
@@ -77,13 +82,36 @@ main{ /* conteudo principal */
     font-family: "Edu AU VIC WA NT Hand", cursive;
     font-size: 1.7em;
     background-color: transparent;
+    animation: txt-titulo-animated 3s ease 1;
+    background: linear-gradient(45deg, #fff, #8999f7, #fff);
+    background-size: 33% 10%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 main h2{ /* titulo dos projetos */
     font-family: "Edu AU VIC WA NT Hand", cursive;
     font-size: 1.3em;
     text-align: center;
     margin: 10px auto 10px;
+    animation: txt-titulo-animated 3s ease 1;
+    background: linear-gradient(45deg, #fff, #5C72F0, #fff);
+    background-size: 50%  10%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+@keyframes txt-titulo-animated{
+    0%{
+        background-position-x: 0%;
+    }
+    50%{
+        background-position: 50%;
+    }
+    100%{
+         background-position: 0%;
+    }
+}
+
 .projetos{
     margin: 0 auto;
     width: 92%;
@@ -103,7 +131,7 @@ main h2{ /* titulo dos projetos */
 }
 .card img{
     width: 60%;
-    height: 120px;
+    height: 15vh;
     margin: 5px;
     border-radius: 20px;
 }
