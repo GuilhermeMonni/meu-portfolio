@@ -1,5 +1,5 @@
 // Quantidade de estrelas
-const numStars = 300;
+const numStars = 400;
 
 // Função para gerar as estrelas
 function generateStars() {
@@ -21,3 +21,20 @@ function generateStars() {
 
 // Gera as estrelas ao carregar a página
 window.onload = generateStars;
+
+// cards dos projetos
+let login = document.querySelector('#login')
+let crud = document.querySelector('#crud')
+let jokenpo = document.querySelector('#jokenpo')
+
+function clickLogin(){
+  window.open('https://github.com/GuilhermeMonni/sistema-de-login', '_blank')
+}
+
+function clickCrud(){
+  window.open('https://github.com/GuilhermeMonni/bloco-de-tarefas', '_blank')
+}
+
+function clickJokenpo(){
+  window.open('https://guilhermemonni.github.io/jokenpo/', '_blank')
+}

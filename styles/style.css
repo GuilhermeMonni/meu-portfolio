@@ -86,7 +86,6 @@ main{ /* conteudo principal */
     background-color: transparent;
     height: 70vh;
     border-radius: 20px;
-    box-shadow: 1px 1px 100px 1px #001935f6;
     animation: container 0.2s 1 ease-in;
 }
 @keyframes container{ /* animacao container */
