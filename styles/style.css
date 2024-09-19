@@ -186,14 +186,9 @@ main h2{ /* titulo dos projetos */
     box-shadow: none;
   }
 
-
-footer{
-    height: 40px;
-    position: fixed;
-    bottom: 0;
-    left: 2px;
-}
 .img-foguete{
+    margin-right: 39%;
+    margin-top: 1%;
     width: 60%;
 }
 #foguete{
@@ -236,13 +231,14 @@ footer{
         width: 80%;
         background-color: transparent;
     }
-    footer{
-        height: 40px;
-        position: fixed;
-        bottom: 0;
-        left: 10px;
+    .img-foguete{
+        background-color: white;
+        width: 10%;
+        position: absolute;
+        top: 100%;
+        left: 2px;
     }
-    footer img{
+    #foguete{
         width: 100%;
     }
 }
