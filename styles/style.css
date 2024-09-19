@@ -10,7 +10,6 @@
     box-sizing: border-box;
     background-color: var(--cor-fundo);
     color: var(--cor-letra);
-    overflow: hidden;
 }
 
 /* cores */
@@ -204,17 +203,36 @@ footer{
 /* mobile */
 @media screen and (300px <= width <= 1000px){
     body{
-        overflow: scrool;
+        overflow-y: scroll;
     }
-    header img{
-        
+    header{
+        margin: 0 auto 0;
+        height: 16vh;
     }
     main{
+        padding: 0;
+        height: 70vh;
         width: 90%;
-        margin: 0 auto;
+        margin: 10px auto 20px;
     }
     .container{
         width: 100%;
-        margin: 0 auto;
-    };
+        height: 100vh;
+        margin: -40px auto 20px;
+    }
+    .txt-inicio{
+        margin: 0 auto 20px;
+        height: auto;
+        padding: 0;
+        width: 100%;
+    }
+    .cards{
+        display: block;
+        margin: 10px auto 100px;
+        background-color: purple;
+    }
+    .card{
+        background-color: red;
+        width: 80%;
+    }
 }
