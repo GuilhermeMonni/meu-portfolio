@@ -188,13 +188,13 @@ main h2{ /* titulo dos projetos */
 
 
 footer{
-    background-color: transparent;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 2px;
 }
 .img-foguete{
     width: 60%;
-    position: absolute;
-    bottom: 2px;
-    left: 2px;
 }
 #foguete{
     width: 3%;
@@ -210,6 +210,7 @@ footer{
         height: 16vh;
     }
     main{
+        z-index: 0;
         padding: 0;
         height: 70vh;
         width: 90%;
@@ -221,6 +222,7 @@ footer{
         margin: -40px auto 20px;
     }
     .txt-inicio{
+        background-color: var(--cor-fundo);
         margin: 0 auto 20px;
         height: auto;
         padding: 0;
@@ -229,10 +231,18 @@ footer{
     .cards{
         display: block;
         margin: 10px auto 100px;
-        background-color: purple;
     }
     .card{
-        background-color: red;
         width: 80%;
+        background-color: transparent;
+    }
+    footer{
+        height: 40px;
+        position: fixed;
+        bottom: 0;
+        left: 10px;
+    }
+    footer img{
+        width: 100%;
     }
 }
