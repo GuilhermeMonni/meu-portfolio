@@ -1,5 +1,5 @@
 // Quantidade de estrelas
-const numStars = 400;
+const numStars = 500;
 
 // Função para gerar as estrelas
 function generateStars() {
@@ -9,10 +9,10 @@ function generateStars() {
   for (let i = 0; i < numStars; i++) {
     // Gera posições aleatórias para cada estrela
     const x = Math.floor(Math.random() * window.innerWidth);
-    const y = Math.floor(Math.random() * window.innerHeight);
+    const y = Math.floor(Math.random() * 1300);
     
     //define a posicao do box-shadow
-    sombra += `${x}px ${y}px #FFF${i < numStars - 1 ? ',' : ''}`;
+    sombra += `${x}px ${y}px #CCC${i < numStars - 1 ? ',' : ''}`;
   }
 
   // Aplica o box-shadow gerado ao elemento .stars
