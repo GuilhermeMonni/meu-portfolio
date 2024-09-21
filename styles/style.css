@@ -29,7 +29,7 @@ body{
     flex-direction: column;
 }
 header{ /* cabecalho */
-    margin: 0 auto;
+    margin: 20px auto;
     width: clamp(300px, 300px, 500px);
     height: clamp(10px, 100px, 100px);
     background-color: transparent;
@@ -73,7 +73,7 @@ header{ /* cabecalho */
 
 main{ /* conteudo principal */
     z-index: 999;
-    margin: 10px auto;
+    margin: 0 auto;
     padding: 10px;
     width: 70%;
     height: auto;
@@ -186,13 +186,31 @@ main h2{ /* titulo dos projetos */
     box-shadow: none;
   }
 
-.img-foguete{
-    margin-right: 39%;
-    margin-top: 1%;
-    width: 60%;
+footer{
+    width: 8%;
+    height: 8vh;
+    margin-right: 91%;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #011d3d;
+    border-radius: 20px;
+    animation: footer-animated 3s 1 ease-in-out;
 }
-#foguete{
-    width: 3%;
+footer img{
+    width: 15%;
+    margin: auto 5px auto 5px;
+    background-color: transparent;
+}
+footer img:hover{
+    scale: 1.05;
+    transition-duration: 0.5s;
+}
+@keyframes footer-animated{
+    from{
+        transform: translateX(-150px);
+    }
 }
 
 /* mobile */
@@ -202,11 +220,10 @@ main h2{ /* titulo dos projetos */
         overflow-x: hidden;
     }
     header{
-        margin: -10px auto 0;
+        margin: 10px auto 20px;
         height: 16vh;
     }
     main{
-        z-index: 0;
         padding: 0;
         height: 70%;
         width: 90%;
@@ -232,12 +249,8 @@ main h2{ /* titulo dos projetos */
         width: 80%;
         background-color: transparent;
     }
-    .img-foguete{
-        height: 200px;
-        background-color: white;
-        width: 10%;
-    }
-    #foguete{
-        width: 100%;
+    footer{
+        margin-top: 90%;
+        width: 20%;
     }
 }
