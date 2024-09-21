@@ -199,17 +199,18 @@ main h2{ /* titulo dos projetos */
 @media screen and (300px <= width <= 1000px){
     body{
         overflow-y: scroll;
+        overflow-x: hidden;
     }
     header{
-        margin: 0 auto 0;
+        margin: -10px auto 0;
         height: 16vh;
     }
     main{
         z-index: 0;
         padding: 0;
-        height: 70vh;
+        height: 70%;
         width: 90%;
-        margin: 10px auto 20px;
+        margin: 0 auto 20px;
     }
     .container{
         width: 100%;
@@ -225,18 +226,16 @@ main h2{ /* titulo dos projetos */
     }
     .cards{
         display: block;
-        margin: 10px auto 100px;
+        margin: 0 auto 100px;
     }
     .card{
         width: 80%;
         background-color: transparent;
     }
     .img-foguete{
+        height: 200px;
         background-color: white;
         width: 10%;
-        position: absolute;
-        top: 100%;
-        left: 2px;
     }
     #foguete{
         width: 100%;
