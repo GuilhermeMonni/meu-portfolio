@@ -30,8 +30,9 @@ body{
 }
 header{ /* cabecalho */
     margin: 20px auto;
-    width: clamp(300px, 300px, 500px);
+    width: clamp(300px, 1000px, 1000px);
     height: clamp(10px, 100px, 100px);
+    position: relative;
     background-color: transparent;
     animation: logo 0.7s 1 ease-in;
     z-index: 2;
@@ -63,12 +64,12 @@ header{ /* cabecalho */
     margin: -10px auto;
     background-color: transparent;
     text-align: center;
-    width: 60;
+    width: 20%;
 }
 .img-inicio img{ /* img cabecalho */
-    width: 40%;
+    width: 80%;
     background-color: transparent;
-    margin: 0 auto;
+    margin: auto;
 }
 
 main{ /* conteudo principal */
@@ -186,30 +187,28 @@ main h2{ /* titulo dos projetos */
     box-shadow: none;
   }
 
-footer{
-    width: 8%;
+.redes{
+    width: 20%;
     height: 8vh;
-    margin-right: 91%;
-    margin-bottom: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #011d3d;
+    position: absolute;
+    top: 0;
+    left: -100px;
+    background-color: transparent;
     border-radius: 20px;
-    animation: footer-animated 3s 1 ease-in-out;
+    animation: footer-animated 3s 1 linear;
 }
-footer img{
-    width: 15%;
+.redes img{
+    width: 10%;
     margin: auto 5px auto 5px;
     background-color: transparent;
 }
-footer img:hover{
+.redes img:hover{
     scale: 1.05;
     transition-duration: 0.5s;
 }
 @keyframes footer-animated{
     from{
-        transform: translateX(-150px);
+        transform: translateY(-150px);
     }
 }
 
@@ -221,7 +220,16 @@ footer img:hover{
     }
     header{
         margin: 10px auto 20px;
+        width: 100%;
         height: 16vh;
+        background-color: transparent;
+    }
+    .img-inicio{
+        margin-top: -20px;
+        width: 30%;
+    }
+    .img-inicio img{
+        width: 100%;
     }
     main{
         z-index: 0;
@@ -250,14 +258,12 @@ footer img:hover{
         width: 80%;
         background-color: transparent;
     }
-    footer{
-        position: absolute;
-        background-color: transparent;
-        bottom: -390px;
-        left: 10px;
-        width: 20%;
+    .redes{
+        width: 30%;
+        top: -20px;
+        left: 1px;
     }
-    footer img{
-        width: 20%;
+    .redes img{
+        width: 15%;
     }
 }
