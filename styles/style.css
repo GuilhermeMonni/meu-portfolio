@@ -212,6 +212,15 @@ main h2{ /* titulo dos projetos */
     }
 }
 
+/* scrollbar */
+::-webkit-scrollbar{
+    width: 3px;
+    background-color: var(--cor-fundo);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--azul);
+}
+
 /* mobile */
 @media screen and (300px <= width <= 1000px){
     body{
