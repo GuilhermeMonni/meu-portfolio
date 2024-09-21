@@ -38,3 +38,15 @@ function clickCrud(){
 function clickJokenpo(){
   window.open('https://guilhermemonni.github.io/jokenpo/', '_blank')
 }
+
+function github(){
+  window.open('https://github.com/GuilhermeMonni', '_blank')
+}
+
+function inst(){
+  window.open('https://www.instagram.com/monni.05/', '_blank')
+}
+
+function linkedin(){
+  window.open('https://www.linkedin.com/in/guilherme-monni-a542a9244/', '_blank')
+}
