@@ -76,7 +76,7 @@ main{ /* conteudo principal */
     z-index: 999;
     margin: 0 auto;
     padding: 10px;
-    width: 70%;
+    width: 75%;
     height: auto;
     box-shadow: 20px;
 }
@@ -152,7 +152,7 @@ main h2{ /* titulo dos projetos */
     flex-direction: row;
 }
 .card{ /* cards dos projetos */
-    margin: 10px auto;
+    margin: 10px 10px;
     background-color: #011833;
     width: 30%;
     height: 200px;
@@ -160,13 +160,14 @@ main h2{ /* titulo dos projetos */
     padding: 20px;
     border-radius: 10px;
     transition-duration: 1s;
+    box-shadow: 3px 3px #011c3a;
 }
 .card:hover{
-    scale: 1.05;
+    scale: 1.02;
 }
 .card img{
     width: 60%;
-    height: 15vh;
+    height: 13vh;
     margin: 5px;
     border-radius: 20px;
 }
@@ -221,7 +222,7 @@ main h2{ /* titulo dos projetos */
     background-color: var(--azul);
 }
 
-/* mobile */
+/* responsividade */
 @media screen and (300px <= width <= 1000px){
     body{
         overflow-y: scroll;
@@ -288,9 +289,9 @@ main h2{ /* titulo dos projetos */
     }
     .cards{
         display: block;
-        margin: 0 auto 100px;
     }
     .card{
+        margin: 50px auto;
         width: 50%;
         background-color: transparent;
     }
