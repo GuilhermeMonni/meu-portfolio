@@ -26,6 +26,7 @@ window.onload = generateStars;
 let login = document.querySelector('#login')
 let crud = document.querySelector('#crud')
 let jokenpo = document.querySelector('#jokenpo')
+let galeria = document.querySelector('#galeria')
 
 function clickLogin(){
   window.open('https://github.com/GuilhermeMonni/sistema-de-login', '_blank')
@@ -37,6 +38,10 @@ function clickCrud(){
 
 function clickJokenpo(){
   window.open('https://guilhermemonni.github.io/jokenpo/', '_blank')
+}
+
+function clickGaleria(){
+  window.open('https://guilhermemonni.github.io/galeria-de-fotos/', '_blank')
 }
 
 function github(){
