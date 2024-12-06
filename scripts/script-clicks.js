@@ -4,6 +4,7 @@ let crud = document.querySelector('#crud')
 let jokenpo = document.querySelector('#jokenpo')
 let galeria = document.querySelector('#galeria')
 
+//funcoes de click
 function clickLogin(){
   window.open('https://github.com/GuilhermeMonni/sistema-de-login', '_blank')
 }
