@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  // cards dos projetos
+// cards dos projetos
 let login = document.querySelector('#login')
 let crud = document.querySelector('#crud')
 let jokenpo = document.querySelector('#jokenpo')
@@ -32,7 +31,4 @@ function inst(){
 function linkedin(){
   window.open('https://www.linkedin.com/in/guilherme-monni-a542a9244/', '_blank')
 }
-  console.log(login.getBoundingClientRect())
-  console.log(crud.getBoundingClientRect())
-  console.log(jokenpo.getBoundingClientRect())
-})
+
