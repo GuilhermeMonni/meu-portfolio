@@ -1,28 +1,5 @@
-// Quantidade de estrelas
-const numStars = 500;
-
-// Função para gerar as estrelas
-function generateStars() {
-  const stars = document.querySelector('.stars');
-  let sombra = '';
-
-  for (let i = 0; i < numStars; i++) {
-    // Gera posições aleatórias para cada estrela
-    const x = Math.floor(Math.random() * window.innerWidth);
-    const y = Math.floor(Math.random() * 1300);
-    
-    //define a posicao do box-shadow
-    sombra += `${x}px ${y}px #CCC${i < numStars - 1 ? ',' : ''}`;
-  }
-
-  // Aplica o box-shadow gerado ao elemento .stars
-  stars.style.boxShadow = sombra;
-}
-
-// Gera as estrelas ao carregar a página
-window.onload = generateStars;
-
-// cards dos projetos
+document.addEventListener("DOMContentLoaded", () => {
+  // cards dos projetos
 let login = document.querySelector('#login')
 let crud = document.querySelector('#crud')
 let jokenpo = document.querySelector('#jokenpo')
@@ -55,3 +32,7 @@ function inst(){
 function linkedin(){
   window.open('https://www.linkedin.com/in/guilherme-monni-a542a9244/', '_blank')
 }
+  console.log(login.getBoundingClientRect())
+  console.log(crud.getBoundingClientRect())
+  console.log(jokenpo.getBoundingClientRect())
+})
