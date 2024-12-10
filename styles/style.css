@@ -21,6 +21,7 @@
     --azul-claro: #5C72F0;
     --lilas: #7D0CF0;
 }
+
 body{
     height: 100vh;
     display: flex;
@@ -178,15 +179,6 @@ main h2{ /* titulo dos projetos */
     font-family: "Nunito Sans", sans-serif;
     background-color: transparent;
 }
-.stars {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1px;
-    height: 1px;
-    background: transparent;
-    box-shadow: none;
-  }
 
 .redes{
     width: 20%;
