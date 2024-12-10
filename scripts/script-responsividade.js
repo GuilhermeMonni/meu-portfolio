@@ -1,8 +1,18 @@
 const smallWindow = window.matchMedia('(max-width: 1500px)')
 
-// Condição de tela menor
-if (smallWindow.matches) {
-  // Cards
-  const cardsDiv = document.querySelector('.cards')
-  // Animação scroll
-}
+// Animação scroll
+window.addEventListener('scroll', () => {
+  const cards = document.querySelectorAll('.scroll')
+  const windowWid = window.innerWidth * 1.8
+
+  cards.forEach((item) => {
+    const cardTop = item.getBoundingClientRect().top - windowWid
+
+    if(cardTop < 0){
+      item.classList.add('scrollOn')
+      item.classList.remove('scroll')
+    } else{
+      item.classList.remove('scrollOn')
+    }
+  })
+})

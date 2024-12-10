@@ -214,6 +214,18 @@ main h2{ /* titulo dos projetos */
     background-color: var(--azul);
 }
 
+/* animacao scroll */
+.scrollOn{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    transition: .9s;
+}
+
+.scroll{
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+}
+
 /* responsividade */
 @media screen and (300px <= width <= 1000px){
     body{
