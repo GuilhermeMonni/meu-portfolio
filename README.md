@@ -5,6 +5,7 @@ Portfólio pessoal para armazenar meus projetos.
 <li>Sistema de Login</li>
 <li>Sistema CRUD</li>
 <li>Jokenpô</li>
+<li>Galeria de fotos</li>
 
 <h2>Observações</h2>
 Irei atualizar este website a cada projeto que eu concluir.
