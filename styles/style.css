@@ -206,10 +206,11 @@ main h2{ /* titulo dos projetos */
     }
 }
 footer{
-    background-color: transparent;
+    width: 10%;
+    height: 20vh;
     position: absolute;
-    bottom: 2%;
-    left: 95%;
+    bottom: 20px;
+    left: 90%;
 }
 
 /* scrollbar */
