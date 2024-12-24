@@ -29,6 +29,7 @@ body{
     justify-content: center;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
 }
 header{ /* cabecalho */
     margin: 20px auto;
