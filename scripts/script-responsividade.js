@@ -20,5 +20,7 @@ if(smallWindow.matches){
 }else{
   const cards = document.querySelectorAll('.scroll')
 
-  cards.classList.remove('scroll')
+  cards.forEach((item) => {
+    item.classList.remove('scroll')
+  })
 }

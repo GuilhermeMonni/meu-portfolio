@@ -206,6 +206,22 @@ main h2{ /* titulo dos projetos */
         transform: translateY(-150px);
     }
 }
+footer{
+    width: 2%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: -10px;
+    left: 30px;
+}
+footer img{
+    width: 60%;
+}
+.creditos-icon{
+    opacity: 0;
+}
 
 /* scrollbar */
 ::-webkit-scrollbar{
