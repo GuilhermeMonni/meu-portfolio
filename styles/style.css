@@ -207,20 +207,57 @@ main h2{ /* titulo dos projetos */
     }
 }
 footer{
-    width: 2%;
-    height: 10vh;
+    background-color: transparent;
+    width: 10%;
+    height: 24vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     position: fixed;
-    bottom: -10px;
-    left: 30px;
+    bottom: 5px;
+    left: 0;
 }
-footer img{
-    width: 60%;
+.icon-alien{
+    background-color: transparent;
+    width: 14%;
 }
-.creditos-icon{
+.creditos{
+    background-color: transparent;
+    position: relative;
+    width: 100%;
+    margin: 90% 0 2% 10%;
+}
+.creditos img{
+    display: block;
+}
+.balao{
     opacity: 0;
+    background-color: transparent;
+    width: 60%;
+    position: absolute;
+    top: -75%; 
+    left: 30%;
+    transform: translate(-45%, -75%);
+}
+.creditos p{
+    opacity: 0;
+    position: absolute;
+    top: -98%; 
+    left: 30%;
+    transform: translate(-45%, -98%);
+    color: #011c3a; 
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 10px; 
+    text-align: center;
+    background-color: transparent;
+    padding: 10px; 
+    border-radius: 5px; 
+}
+.creditos a{
+    text-decoration: none;
+    background-color: transparent;
+    color: #011c3a;
 }
 
 /* scrollbar */
