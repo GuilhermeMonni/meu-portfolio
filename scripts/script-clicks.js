@@ -36,6 +36,6 @@ function linkedin(){//link linkedin
 
 //link icone alien
 iconAlien.addEventListener('click', () => {
-  window.open('https://www.flaticon.com/br/icone-gratis/outer-space-alien_71298?related_id=71298&origin=search', '_blank')
+  window.open('https://www.flaticon.com/br/autores/freepik', '_blank')
 })
 
