@@ -221,6 +221,7 @@ footer{
 .icon-alien{
     background-color: transparent;
     width: 14%;
+    cursor: pointer;
 }
 .creditos{
     background-color: transparent;
@@ -232,7 +233,6 @@ footer{
     display: block;
 }
 .balao{
-    opacity: 0;
     background-color: transparent;
     width: 60%;
     position: absolute;
@@ -241,8 +241,8 @@ footer{
     transform: translate(-45%, -75%);
 }
 .creditos p{
-    opacity: 0;
     position: absolute;
+    cursor: default;
     top: -98%; 
     left: 30%;
     transform: translate(-45%, -98%);
@@ -254,10 +254,13 @@ footer{
     padding: 10px; 
     border-radius: 5px; 
 }
-.creditos a{
-    text-decoration: none;
-    background-color: transparent;
-    color: #011c3a;
+.ativo{
+    display: initial;
+    opacity: 1;
+}
+.inativo{
+    display: none;
+    opacity: 0;
 }
 
 /* scrollbar */

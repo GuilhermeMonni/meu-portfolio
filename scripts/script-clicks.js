@@ -39,3 +39,28 @@ iconAlien.addEventListener('click', () => {
   window.open('https://www.flaticon.com/br/autores/freepik', '_blank')
 })
 
+// animacao balao
+const alien = document.querySelector('.icon-alien')
+const balao = document.querySelector('.balao')
+const txt = document.querySelector('.txt')
+
+balao.classList.add('inativo')
+txt.classList.add('inativo')
+
+//cursor entra
+alien.addEventListener('mouseover', () => {
+  balao.classList.remove('inativo')
+  txt.classList.remove('inativo')
+
+  balao.classList.add('ativo')
+  txt.classList.add('ativo')
+})
+
+//cursor sai
+alien.addEventListener('mouseout', () => {
+  balao.classList.remove('ativo')
+  txt.classList.remove('ativo')
+
+  balao.classList.add('inativo')
+  txt.classList.add('inativo')
+})
