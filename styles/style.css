@@ -240,7 +240,7 @@ footer{
     left: 30%;
     transform: translate(-45%, -75%);
 }
-.creditos p{
+.txt{
     position: absolute;
     cursor: default;
     top: -98%; 
@@ -333,6 +333,17 @@ footer{
     .redes img{
         width: 15%;
     }
+    footer{
+        width: 25%;
+        bottom: -38px;
+    }
+    .balao{
+        height: 10vh;
+        width: 80%;
+    }
+    .txt{
+        top: -50%;
+    }
     /* animacao scroll */
     .scrollOn{
         opacity: 1;
@@ -374,6 +385,17 @@ footer{
         width: 20%;
         top: -20px;
         left: 1px;
+    }
+    footer{
+        width: 15%;
+        bottom: 10px;
+    }
+    .balao{
+        height: 10vh;
+        width: 80%;
+    }
+    .txt{
+        top: -50%;
     }
     /* animacao scroll */
     .scrollOn{
