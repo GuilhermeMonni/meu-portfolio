@@ -190,7 +190,7 @@ main h2{ /* titulo dos projetos */
     left: -100px;
     background-color: transparent;
     border-radius: 20px;
-    animation: footer-animated 3s 1 linear;
+    animation: redes-animated 3s 1 linear;
 }
 .redes img{
     width: 10%;
@@ -201,7 +201,7 @@ main h2{ /* titulo dos projetos */
     scale: 1.05;
     transition-duration: 0.5s;
 }
-@keyframes footer-animated{
+@keyframes redes-animated{
     from{
         transform: translateY(-150px);
     }
@@ -222,6 +222,8 @@ footer{
     background-color: transparent;
     width: 14%;
     cursor: pointer;
+    transition-duration: 1s;
+    animation: footer-animated 2s ease-in-out;
 }
 .creditos{
     background-color: transparent;
@@ -261,6 +263,18 @@ footer{
 .inativo{
     display: none;
     opacity: 0;
+}
+
+/* animacao alien rodape */
+@keyframes footer-animated{
+    from{
+        transform: translateX(-20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 /* scrollbar */
@@ -328,7 +342,7 @@ footer{
     .redes{
         width: 30%;
         top: -20px;
-        left: 1px;
+        left: 10px;
     }
     .redes img{
         width: 15%;
@@ -336,6 +350,7 @@ footer{
     footer{
         width: 25%;
         bottom: -38px;
+        left: 10px;
     }
     .balao{
         height: 10vh;
@@ -384,11 +399,12 @@ footer{
     .redes{
         width: 20%;
         top: -20px;
-        left: 1px;
+        left: 10px;
     }
     footer{
         width: 10%;
         bottom: 10px;
+        left: 10px;
     }
     .balao{
         height: 10vh;
