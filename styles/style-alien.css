@@ -1,8 +1,9 @@
+/* estilo alien */
 .alien{
     background-color: transparent;
     position: absolute;
     bottom: -10px;
-    right: -10px;
+    right: -4px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,7 +57,7 @@
     top: -5%;
     left: -10%;
     border-radius: 100%;
-    animation: acenar 1s 5 linear;
+    animation: acenar 1s 5 ease-in-out;
 }
 .braco-direito{
     background: linear-gradient(45deg, #006b3c, #005A32, #005A32, #005A32, #005A32, #005A32);
@@ -95,6 +96,19 @@
     color: #006b3c;
 }
 
+/* estilo ovni */
+.ovni{
+    width: 8%;
+    position: absolute;
+    bottom: 100px;
+    right: 10px;
+    animation: movimento-nave 2s infinite ease-in-out;
+}
+.ovni img{
+    width: 100%;
+}
+
+
 /* animacao aceno */
 @keyframes acenar{
     0%, 100% {
@@ -103,6 +117,34 @@
     }
     50% {
         transform: translateX(-10%) rotate(-50deg);
+    }
+}
+
+/* animacao nave */
+@keyframes movimento-nave{
+    0% {
+        top: -200px;
+        right: 1px;
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    25% {
+        top: 100px;
+        right: 2px;
+        transform: translate(-50%, -50%) rotate(60deg);
+    }
+    50% {
+        top: 300px;
+        right: 5px;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+    75% {
+        top: 380px;
+        right: 3px;
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        right: 10px;
+        top: 450px;
     }
 }
 
