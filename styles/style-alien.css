@@ -1,25 +1,19 @@
-@keyframes alien-animated{
-    from{
-        transform: translateY(150px);
-    }
-}
-
 .alien{
     background-color: transparent;
-    margin: 20px -20px;
-    padding: 20px;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
     height: 20vh;
 }
 .cabeca{
     background: linear-gradient(45deg, #006b3c, #004d2b);
-    margin-bottom: -1px;
     width: 13%;
-    height: 3vh;
+    height: 4vh;
     border-radius: 80% 80% 100% 100%;
     position: relative;
     border: 1px solid #ffffff1d;
@@ -29,9 +23,9 @@
     transform: skew(30deg, -20deg);
     border-radius: 100%;
     width: 20%;
-    height: 0.7vh;
+    height: 0.8vh;
     position: absolute;
-    top: 30%;
+    top: 44%;
     left: 15%;
 }
 .olho-direito{
@@ -39,49 +33,78 @@
     transform: skew(-30deg, 20deg);
     border-radius: 100%;
     width: 20%;
-    height: 0.7vh;
+    height: 0.8vh;
     position: absolute;
-    top: 30%;
+    top: 44%;
     right: 15%;
-}
-.boca{
-    background-color: #000000dc;
-    width: 40%;
-    height: 0.5vh;
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10% 10% 100% 100%;
 }
 
 .corpo{
     background: linear-gradient(45deg, #006b3c, #004d2b);
     width: 13%;
-    height: 3vh;
+    height: 4vh;
     border-radius: 80% 80% 50% 50%;
     border: 1px solid #ffffff1d;
     position: relative;
 }
 .braco-esquerdo{
     background: linear-gradient(45deg, #006b3c, #005A32, #005A32, #005A32, #005A32, #005A32);
-    transform: skew(-30deg);
-    width: 20%;
-    height: 2vh;           
+    transform: rotate(25deg);
+    width: 25%;
+    height: 4vh;           
     position: absolute;
-    top: 10%;
+    top: -5%;
     left: -10%;
-    border-radius: 20%;
+    border-radius: 100%;
+    animation: acenar 1s 5 linear;
 }
 .braco-direito{
     background: linear-gradient(45deg, #006b3c, #005A32, #005A32, #005A32, #005A32, #005A32);
-    transform: skew(30deg);
-    width: 20%;
-    height: 2vh;           
+    transform: rotate(-25deg);
+    width: 25%;
+    height: 4vh;             
     position: absolute;
-    top: 10%;
+    top: -5%;
     right: -10%;
-    border-radius: 20%;
+    border-radius: 100%;
 }
+
+.perna-direita{
+    background: linear-gradient(45deg, #006b3c, #005A32, #005A32, #005A32, #005A32, #005A32);
+    transform: rotate(5deg);
+    width: 35%;
+    height: 3vh;             
+    position: absolute;
+    top: 80%;
+    right: 50%;
+    border-radius: 80%;
+}
+.perna-esquerda{
+    background: linear-gradient(45deg, #006b3c, #005A32, #005A32, #005A32, #005A32, #005A32);
+    transform: rotate(-5deg);
+    width: 35%;
+    height: 3vh;             
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    border-radius: 80%;
+}
+
+.cabeca::after, .corpo::after{
+    content: ' ';
+    color: #006b3c;
+}
+
+/* animacao aceno */
+@keyframes acenar{
+    0%, 100% {
+        transform: translateX(-10%) rotate(-25deg);
+        top: -20%;
+    }
+    50% {
+        transform: translateX(-10%) rotate(-50deg);
+    }
+}
+
 
 
