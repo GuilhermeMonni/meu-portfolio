@@ -99,13 +99,17 @@
 /* estilo ovni */
 .ovni{
     width: 8%;
+    height: 16vh;
+    background: none;
     position: absolute;
-    bottom: 100px;
+    bottom: 120px;
     right: 10px;
-    animation: movimento-nave 2s infinite ease-in-out;
+    animation: movimento-nave 2s 1 ease-in-out;
+    filter: drop-shadow(10px 10px 100px #ffffff);
 }
 .ovni img{
     width: 100%;
+    background-color: transparent;
 }
 
 
@@ -124,27 +128,32 @@
 @keyframes movimento-nave{
     0% {
         top: -200px;
-        right: 1px;
+        right: -100px;
         transform: translate(-50%, -50%) rotate(0deg);
+        opacity: 0;
     }
     25% {
         top: 100px;
-        right: 2px;
-        transform: translate(-50%, -50%) rotate(60deg);
+        right: -20px;
+        transform: translate(-50%, -50%) rotate(45deg);
+        opacity: 0.2;
     }
     50% {
         top: 300px;
-        right: 5px;
-        transform: translate(-50%, -50%) rotate(45deg);
+        right: -50px;
+        transform: translate(-50%, -50%) rotate(-20deg);
+        opacity: 0.6;
     }
     75% {
-        top: 380px;
-        right: 3px;
+        top: 450px;
+        right: -10px;
         transform: translate(-50%, -50%) rotate(0deg);
+        opacity: 0.8;
     }
     100% {
         right: 10px;
-        top: 450px;
+        bottom: 120px;
+        opacity: 1;
     }
 }
 
