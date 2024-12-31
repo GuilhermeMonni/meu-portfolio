@@ -102,14 +102,18 @@
     height: 16vh;
     background: none;
     position: absolute;
-    bottom: 120px;
+    bottom: 300px;
     right: 10px;
-    animation: movimento-nave 2s 1 ease-in-out;
-    filter: drop-shadow(10px 10px 100px #ffffff);
+    animation: movimeto-nave 2s 1 ease-in-out;
+    filter: drop-shadow(5px 5px 100px #ffffff);
 }
 .ovni img{
     width: 100%;
     background-color: transparent;
+}
+.luz-ovni{
+    width: 200px;
+    background-color: #ccc;
 }
 
 
