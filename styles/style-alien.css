@@ -99,7 +99,7 @@
 /* estilo ovni */
 .ovni{
     width: 8%;
-    height: 16vh;
+    height: 30vh;
     background: none;
     position: absolute;
     bottom: 300px;
@@ -112,8 +112,13 @@
     background-color: transparent;
 }
 .luz-ovni{
-    width: 200px;
-    background-color: #ccc;
+    width: 20%;
+    background-color: red;
+    margin: 10px auto;
+}
+.luz-ovni::after{
+    content: 'dafgdfg';
+    color: red;
 }
 
 
