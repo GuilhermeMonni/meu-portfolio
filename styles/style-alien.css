@@ -102,9 +102,9 @@
     height: 30vh;
     background: none;
     position: absolute;
-    bottom: 300px;
+    bottom: 100px;
     right: 10px;
-    animation: movimento-nave 2s 1 ease-in-out;
+    animation: movimento-nve 2s 1 ease-in-out;
     filter: drop-shadow(5px 5px 100px #ffffff);
 }
 .ovni img{
@@ -112,12 +112,15 @@
     background-color: transparent;
 }
 .luz-ovni{
-    width: 20%;
-    background-color: red;
-    margin: 10px auto;
+    width: 60%;
+    height: 20vh;
+    transform: perspective(100px) scaleX(1) rotateX(60deg);
+    transform-origin: top;
+    background: linear-gradient(transparent, transparent, transparent, #cccccc5f, #cccccc7e, #cccccca4, #ccc, white, white, white);
+    margin: -50px auto;
 }
 .luz-ovni::after{
-    content: 'dafgdfg';
+    content: '. ';
     color: red;
 }
 
