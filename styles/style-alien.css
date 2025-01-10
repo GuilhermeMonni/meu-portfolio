@@ -91,9 +91,18 @@
     border-radius: 80%;
 }
 
-.cabeca::after, .corpo::after{
+.perna-direita::after{
     content: ' ';
-    color: #006b3c;
+    background-color: #000;
+    color: #000;
+    height: 0.2vh;
+    width: 14px;
+    box-shadow: 1px 1px 5px 5px #000;
+    border-radius: 100%;
+    position: absolute;
+    top: 110%;
+    right: -100%;
+    opacity: 0;
 }
 
 /* estilo ovni */
@@ -120,8 +129,7 @@
     margin: -50px auto;
 }
 .luz-ovni::after{
-    content: '. ';
-    color: red;
+    content: ' ';
 }
 
 
