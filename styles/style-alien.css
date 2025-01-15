@@ -91,17 +91,15 @@
     border-radius: 80%;
 }
 
-.perna-direita::after{
-    content: ' ';
-    background-color: #000;
-    color: #000;
-    height: 0.2vh;
-    width: 14px;
-    box-shadow: 1px 1px 5px 5px #000;
+.sombra{
+    background-color: #000000a1;
+    height: 0.1vh;
+    width: 14%;
+    box-shadow: 1px 1px 8px 4px #000;
     border-radius: 100%;
     position: absolute;
-    top: 110%;
-    right: -100%;
+    top: 85%;
+    right: 43%;
     opacity: 0;
 }
 
@@ -113,7 +111,7 @@
     position: absolute;
     bottom: 100px;
     right: 10px;
-    animation: movimento-nve 2s 1 ease-in-out;
+    animation: movimento-nave 1.3s 1 linear;
     filter: drop-shadow(5px 5px 100px #ffffff);
 }
 .ovni img{
@@ -155,7 +153,7 @@
     25% {
         top: 100px;
         right: -20px;
-        transform: translate(-50%, -50%) rotate(45deg);
+        transform: translate(-50%, -50%) rotate(10deg);
         opacity: 0.2;
     }
     50% {
@@ -165,7 +163,7 @@
         opacity: 0.6;
     }
     75% {
-        top: 450px;
+        top: 390px;
         right: -10px;
         transform: translate(-50%, -50%) rotate(0deg);
         opacity: 0.8;
