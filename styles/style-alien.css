@@ -109,9 +109,9 @@
     height: 30vh;
     background: none;
     position: absolute;
-    bottom: 100px;
+    bottom: 30px;
     right: 10px;
-    animation: movimento-nave 1.3s 1 linear;
+    animation: movimento-nave 1.8s 1 linear;
     filter: drop-shadow(5px 5px 100px #ffffff);
 }
 .ovni img{
@@ -139,6 +139,22 @@
     }
     50% {
         transform: translateX(-10%) rotate(-50deg);
+    }
+}
+
+/* animacao abducao */
+@keyframes abducao{
+    to{
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+}
+
+/* animacao sombra */
+@keyframes desSombra{
+    to{
+        transform: translateY(50px);
+        opacity: 0;
     }
 }
 
@@ -170,7 +186,7 @@
     }
     100% {
         right: 10px;
-        bottom: 120px;
+        bottom: 30px;
         opacity: 1;
     }
 }
