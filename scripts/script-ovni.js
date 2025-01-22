@@ -28,6 +28,7 @@ setTimeout(() => {
     setTimeout(() => {
         et.style.display = 'none'
         luz.style.display = 'none'
+        ovni.style.animation = 'desOvni 0.4s 1 linear'
     }, 1400)
-}, 1400)
+}, 1800)
 

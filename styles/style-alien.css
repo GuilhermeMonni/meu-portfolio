@@ -150,11 +150,18 @@
     }
 }
 
-/* animacao sombra */
+/* animacao desaparece sombra */
 @keyframes desSombra{
     to{
         transform: translateY(50px);
         opacity: 0;
+    }
+}
+
+/* animacao desaparece ovni */
+@keyframes desOvni{
+    to{
+        transform: translate(300px, -300px);
     }
 }
 
