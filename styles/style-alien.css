@@ -111,7 +111,7 @@
     position: absolute;
     bottom: 30px;
     right: 10px;
-    animation: movimento-nave 1.8s 1 linear;
+    animation: movimento-nave 1s 1 linear;
     filter: drop-shadow(5px 5px 100px #ffffff);
 }
 .ovni img{
