@@ -16,6 +16,8 @@ const luz = criar('div')//div luz
 
 function abducao() {
     if(localStorage.getItem('animacaoExibida')){
+        sumir(ovni)
+        sumir(et)
         return Promise.resolve()
     }
 
@@ -40,7 +42,7 @@ function abducao() {
                 resolve()
             }, 100)
         }, 1400)
-    }, 1200)
+    }, 2000)
     })
 } 
 

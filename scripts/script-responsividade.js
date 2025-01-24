@@ -2,6 +2,7 @@ const smallWindow = window.matchMedia('(max-width: 1500px)')
 
 // Animação scroll
 if(smallWindow.matches){
+  localStorage.setItem('animacaoExibida', 'true')
   window.addEventListener('scroll', () => {
     const cards = document.querySelectorAll('.scroll')
     const windowWid = window.innerWidth * 1.8
