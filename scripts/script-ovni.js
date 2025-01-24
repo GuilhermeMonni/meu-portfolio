@@ -15,6 +15,10 @@ const et = seletor('.alien') //div alien
 const luz = criar('div')//div luz
 
 function abducao() {
+    if(localStorage.getItem('animacaoExibida')){
+        return Promise.resolve()
+    }
+
     return new Promise((resolve) => {
     setTimeout(() => {
         ovni.appendChild(luz)//cria luz
@@ -32,6 +36,7 @@ function abducao() {
             luz.style.display = 'none'
             ovni.style.animation = 'desOvni 0.4s 1 linear'
             setTimeout(() => {
+                localStorage.setItem('animacaoExibida', 'true')
                 resolve()
             }, 100)
         }, 1400)
