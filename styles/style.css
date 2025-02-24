@@ -189,7 +189,7 @@ main h2{ /* titulo dos projetos */
     left: -100px;
     background-color: transparent;
     border-radius: 20px;
-    animation: redes-animated 3s 1 linear;
+    animation: redes-animated 1s 1 linear;
 }
 .redes img{
     width: 10%;
@@ -199,10 +199,11 @@ main h2{ /* titulo dos projetos */
 .redes img:hover{
     scale: 1.05;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 @keyframes redes-animated{
     from{
-        transform: translateY(-150px);
+        transform: translateY(-10px);
     }
 }
 footer{
